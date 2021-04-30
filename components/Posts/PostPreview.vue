@@ -68,6 +68,14 @@ a {
   padding: 10px;
   text-align: center;
 }
+.post-list {
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
 a:hover .post-content,
 a:active .post-content {
