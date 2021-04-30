@@ -3,36 +3,22 @@
     <section class="intro">
       <h1>Get the latest tech news!</h1>
     </section>
-    <section class="featured-posts">
-      <PostPreview 
-      id="1"
-      thumbnail="https://cdn-media-1.freecodecamp.org/ghost/2019/03/vueart.png"
-      title="Hello there!"
-      previewText="Vue is all around solid"/>
-      <PostPreview 
-      id="2"
-      thumbnail="https://easybase.io/assets/images/posts_images/5-great-react-libraries-1.png"
-      title="Hello there!"
-      previewText="React is better"/>
-      <PostPreview 
-      id="3"
-      thumbnail="https://cdn.searchenginejournal.com/wp-content/uploads/2019/04/the-seo-guide-to-angular-760x400.png"
-      title="Hello there!"
-      previewText="Angular sucks"/>
-    </section>
+    
+  <PostsList />
+ 
       </div>
 </template>
 
 <script>
-import PostPreview from '@/components/Posts/PostPreview'
+import PostsList from '@/components/Posts/PostsList'
 export default {
   components: {
-    PostPreview
+    PostsList
   }
 }
 </script>
 
-<style>
+<style scoped>
 .intro {
   height: 300px;
   position: relative;
