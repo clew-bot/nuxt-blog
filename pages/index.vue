@@ -8,17 +8,17 @@
       id="1"
       thumbnail="https://cdn-media-1.freecodecamp.org/ghost/2019/03/vueart.png"
       title="Hello there!"
-      previewText="This is my first post!"/>
+      previewText="Vue is all around solid"/>
       <PostPreview 
       id="2"
       thumbnail="https://easybase.io/assets/images/posts_images/5-great-react-libraries-1.png"
       title="Hello there!"
-      previewText="This is my first post!"/>
+      previewText="React is better"/>
       <PostPreview 
       id="3"
-      thumbnail="https://cdn-media-1.freecodecamp.org/ghost/2019/03/vueart.png"
+      thumbnail="https://cdn.searchenginejournal.com/wp-content/uploads/2019/04/the-seo-guide-to-angular-760x400.png"
       title="Hello there!"
-      previewText="This is my first post!"/>
+      previewText="Angular sucks"/>
     </section>
       </div>
 </template>
@@ -38,6 +38,8 @@ export default {
   position: relative;
   padding: 30px;
   box-sizing: border-box;
+  /* detected by webpack which is used behind the scences will search for this image, optimize and copy to deployment */
+  background-image: url('~assets/images/main-page-background.jpg');
   background-position: center;
   background-size: cover;
 }
